@@ -12,7 +12,9 @@ class FakultasController extends Controller
      */
     public function index()
     {
-        //
+        $fakultas = ["FIKR", "FEB"];
+        return view('fakultas.index')
+                ->with('fakultas', $fakultas);
     }
 
     /**
