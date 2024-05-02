@@ -4,3 +4,9 @@ composer -v
 composer create-project laravel/laravel example-app
 cd .\example-app\
 php artisan serve
+php artisan migrate
+php artisan make:model Fakultas
+php artisan make:model Fakultas -m (Migration)
+php artisan make:model Fakultas -mc (Migration, Controller)
+php artisan make:model Fakultas -mcr (Migration, Controller, Resource)
+php artisan make:controller Fakultas
