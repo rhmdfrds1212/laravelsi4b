@@ -1,5 +1,6 @@
 #kode
 =======================================================
+composer install
 composer -v
 composer create-project laravel/laravel example-app
 cd .\example-app\
