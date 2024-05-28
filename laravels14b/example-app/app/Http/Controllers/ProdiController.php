@@ -12,8 +12,8 @@ class ProdiController extends Controller
      */
     public function index()
     {
-        $prodi = Prodi::all(); // select * from prodi
-        return view('fakultas.index')
+        $prodi = Prodi::all(); 
+        return view('prodi.index')
                 ->with('prodi', $prodi);
     }
     

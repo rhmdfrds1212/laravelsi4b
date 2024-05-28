@@ -1,11 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title')</title>
-    <!-- base:css -->
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>@yield('title')</title>
+  <!-- base:css -->
   <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
   <!-- endinject -->
@@ -32,21 +34,17 @@
             <div class="badge badge-info badge-pill">2</div>
           </a>
         </li>
-         <li class="nav-item">
-          <a class="nav-link" href="{{ url('fakultas') }}">
-            <i class="mdi mdi-view-quilt menu-icon"></i>
-            <span class="menu-title">Fakultas</span>
-          </a>
-        </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url (index.html)}} ">
-            <i class="mdi mdi-view-quilt menu-icon"></i>
-            <span class="menu-title">Program Studi</span>
-            <div class="badge badge-info badge-pill">2</div>
+          <a class="nav-link" href="{{ url('fakultas') }}">
+                <i class="mdi mdi-bank menu-icon"></i>
+                <span class="menu-title">Fakultas</span>
           </a>
         </li>
-          <p>Components</p>
-          <span></span>
+       <li class="nav-item">
+          <a class="nav-link" href="{{ url('prodi') }}">
+                <i class="mdi mdi-view-quilt menu-icon"></i>
+                <span class="menu-title">Program Studi</span>
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
@@ -283,7 +281,7 @@
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
-            @yield('content')
+          @yield('content')
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:./partials/_footer.html -->
@@ -325,9 +323,3 @@
 </body>
 
 </html>
-</head>
-<body>
-
-</body>
-</html>
-

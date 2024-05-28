@@ -9,10 +9,10 @@ class Prodi extends Model
 {
     use HasFactory;
 
-    public function fakultas() {
+    public function fakultas(){
         return $this->belongsTo(Fakultas::class, 'fakultas_id');
-        // return $this->belongsTo(Nama Model::class, 'foreign_key');
-        // 1 prodi 1 fakultas belongsTo()
-        // 1 fakultas > 1 prodi hasMany()
+        //return $this->belongsTo(Nama_Model::class, 'foreign_key');
+        // 1 prodi 1 fakultas belongsTo*()
+        // 1 fakultas > prodi hasMany()
     }
 }
